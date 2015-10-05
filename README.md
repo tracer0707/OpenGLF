@@ -3,7 +3,7 @@ Powerful 2D OpenGL Framework
 
 Quick start:
 
-```
+```cs
 using System;
 using OpenGLF;
 using OpenTK;
