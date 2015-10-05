@@ -1,0 +1,13 @@
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\bin\Debug\Shaders.exe.config
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\bin\Debug\Shaders.exe
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\bin\Debug\Shaders.pdb
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\bin\Debug\OpenGLF.dll
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\bin\Debug\OpenTK.dll
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\bin\Debug\irrKlang.NET4.dll
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\bin\Debug\Physics.dll
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\bin\Debug\OpenTK.GLControl.dll
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\bin\Debug\OpenGLF.pdb
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\bin\Debug\Physics.pdb
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\obj\Debug\Shaders.csprojResolveAssemblyReference.cache
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\obj\Debug\Shaders.exe
+E:\Dev\Net\OpenGLF\Source\Examples\Shaders\obj\Debug\Shaders.pdb

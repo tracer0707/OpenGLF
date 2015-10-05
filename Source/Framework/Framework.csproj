@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9B2E136-8FB7-4383-91DF-2CE1D68246C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenGLF</RootNamespace>
+    <AssemblyName>OpenGLF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="irrKlang.NET4">
+      <HintPath>..\..\Dependencies\irrKlang.NET4.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>..\..\Dependencies\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl">
+      <HintPath>..\..\Dependencies\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Physics, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\Physics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Asset.cs" />
+    <Compile Include="Assets\AssetList.cs" />
+    <Compile Include="Assets\Assets.cs" />
+    <Compile Include="Assets\Audio.cs" />
+    <Compile Include="Assets\Font.cs" />
+    <Compile Include="Blueprint\Blocks\Input\BlockGetKey.cs" />
+    <Compile Include="Blueprint\Blocks\Input\BlockMouseGetPosition.cs" />
+    <Compile Include="Blueprint\Blocks\Math\BlockDivide.cs" />
+    <Compile Include="Blueprint\Blocks\Math\BlockMultiply.cs" />
+    <Compile Include="Blueprint\Blocks\Math\BlockSubtract.cs" />
+    <Compile Include="Blueprint\Blocks\Math\BlockAdd.cs" />
+    <Compile Include="Blueprint\Blocks\Math\BlockLookAt.cs" />
+    <Compile Include="Blueprint\Blocks\Math\BlockNewVector.cs" />
+    <Compile Include="Blueprint\Blocks\Object\BlockGetAngle.cs" />
+    <Compile Include="Blueprint\Blocks\Object\BlockGetPosition.cs" />
+    <Compile Include="Blueprint\Blocks\Object\BlockSetAngle.cs" />
+    <Compile Include="Blueprint\Blocks\Object\BlockMove.cs" />
+    <Compile Include="Blueprint\Blocks\Variables\BlockFloat.cs" />
+    <Compile Include="Components\Tile.cs" />
+    <Compile Include="Blueprint\Blocks\Block.cs" />
+    <Compile Include="Assets\Blueprint.cs" />
+    <Compile Include="Blueprint\Blocks\BlockControl.cs" />
+    <Compile Include="Blueprint\Blocks\Functions\BlockDraw.cs" />
+    <Compile Include="Blueprint\Blocks\Functions\BlockBeforeDraw.cs" />
+    <Compile Include="Blueprint\Blocks\Functions\BlockHub.cs" />
+    <Compile Include="Blueprint\Blocks\Functions\BlockUpdate.cs" />
+    <Compile Include="Blueprint\Blocks\Functions\BlockStart.cs" />
+    <Compile Include="Blueprint\ConnectorDummy.cs" />
+    <Compile Include="Blueprint\Blocks\Casts\BlockFloatToString.cs" />
+    <Compile Include="Blueprint\Blocks\Casts\BlockIntToString.cs" />
+    <Compile Include="Blueprint\Blocks\Object\BlockSetPosition.cs" />
+    <Compile Include="Blueprint\Blocks\Casts\BlockVectorComponents.cs" />
+    <Compile Include="Blueprint\Blocks\Logic\BlockCompare.cs" />
+    <Compile Include="Blueprint\Blocks\Variables\BlockFont.cs" />
+    <Compile Include="Blueprint\Blocks\Variables\BlockColor.cs" />
+    <Compile Include="Blueprint\Blocks\Drawing\BlockDrawText.cs" />
+    <Compile Include="Blueprint\Blocks\BlockFunction.cs" />
+    <Compile Include="Blueprint\Blocks\Variables\BlockGameObject.cs" />
+    <Compile Include="Blueprint\Blocks\Variables\BlockInt.cs" />
+    <Compile Include="Blueprint\Blocks\Variables\BlockString.cs" />
+    <Compile Include="Blueprint\Blocks\BlockVariable.cs" />
+    <Compile Include="Blueprint\Blocks\Variables\BlockVector.cs" />
+    <Compile Include="Blueprint\Connector.cs" />
+    <Compile Include="Components\AudioListener.cs" />
+    <Compile Include="Components\AudioSource.cs" />
+    <Compile Include="Components\Behavior.cs" />
+    <Compile Include="Components\BlueprintBehavior.cs" />
+    <Compile Include="Components\GUI\Canvas.cs" />
+    <Compile Include="Components\ComponentList.cs" />
+    <Compile Include="Components\Component.cs" />
+    <Compile Include="Components\FieldListConverter.cs" />
+    <Compile Include="Components\GUI\Control.cs" />
+    <Compile Include="Components\GUI\Label.cs" />
+    <Compile Include="Components\Rigidbody.cs" />
+    <Compile Include="Components\Sprite.cs" />
+    <Compile Include="Editors\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\VerticesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\ComponentsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shaders\Int.cs" />
+    <Compile Include="System\GameObjectList.cs" />
+    <Compile Include="Graphics\Color.cs" />
+    <Compile Include="Graphics\GLCanvas.cs" />
+    <Compile Include="System\Input.cs" />
+    <Compile Include="System\Physics.cs" />
+    <Compile Include="Shaders\Shaders.cs" />
+    <Compile Include="Utils\BezierCurveCubic.cs" />
+    <Compile Include="Utils\Mathf.cs" />
+    <Compile Include="Components\Camera.cs" />
+    <Compile Include="Editors\DictionaryEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\SequenceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Graphics\Rect.cs" />
+    <Compile Include="Shaders\Float.cs" />
+    <Compile Include="Utils\ByteConverter.cs" />
+    <Compile Include="Utils\RC4.cs" />
+    <Compile Include="System\Window.cs" />
+    <Compile Include="Assets\Prefab.cs" />
+    <Compile Include="Shaders\Sampler2D.cs" />
+    <Compile Include="Assets\Scene.cs" />
+    <Compile Include="Graphics\Screen.cs" />
+    <Compile Include="Assets\Script.cs" />
+    <Compile Include="Utils\Serialization.cs" />
+    <Compile Include="Editors\StringEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assets\TextureSequence.cs" />
+    <Compile Include="Shaders\Vec4.cs" />
+    <Compile Include="Graphics\Glu.cs" />
+    <Compile Include="Assets\Material.cs" />
+    <Compile Include="Graphics\Drawing.cs" />
+    <Compile Include="Assets\Shader.cs" />
+    <Compile Include="Assets\Texture.cs" />
+    <Compile Include="Graphics\Vector.cs" />
+    <Compile Include="System\Engine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\GameObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Editors\ComponentsEditor.resx">
+      <DependentUpon>ComponentsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\DictionaryEditor.resx">
+      <DependentUpon>DictionaryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\SequenceEditor.resx">
+      <DependentUpon>SequenceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\StringEditor.resx">
+      <DependentUpon>StringEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\VerticesEditor.resx">
+      <DependentUpon>VerticesEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
