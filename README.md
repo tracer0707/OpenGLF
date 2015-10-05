@@ -1,5 +1,5 @@
 # OpenGLF
-Powerful 2D OpenGL Framework
+Powerful 2D OpenGL Framework for C#
 
 Quick start:
 
