@@ -3,6 +3,7 @@ Powerful 2D OpenGL Framework
 
 Quick start:
 
+```
 using System;
 using OpenGLF;
 using OpenTK;
@@ -74,3 +75,4 @@ namespace Test
         }
     }
 }
+```
